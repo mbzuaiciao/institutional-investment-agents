@@ -1,0 +1,17 @@
+{
+  "schema_version": "phase3-counterfactuals-v1",
+  "pairs": [
+    {
+      "pair_id": "credit-direction-001",
+      "original": {
+        "evidence": ["Leverage rises to 4.8x.", "Free cash flow deteriorates.", "Spread widens 60bp."],
+        "task": "Assess credit attractiveness."
+      },
+      "counterfactual": {
+        "evidence": ["Leverage falls to 2.8x.", "Free cash flow improves.", "Spread tightens 60bp."],
+        "task": "Assess credit attractiveness."
+      },
+      "treatment": "All three directional signals are reversed; wording and task are held constant."
+    }
+  ]
+}

@@ -6,7 +6,8 @@ __pycache__/
 *.pyc
 .DS_Store
 .env
+.phase3_cache/
+results/phase3/raw_cache/
 *.egg-info/
 build/
 dist/
-

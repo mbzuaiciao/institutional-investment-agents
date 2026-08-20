@@ -1,0 +1,7 @@
+{
+  "schema_version": "phase3-results-v1",
+  "result_status": "NOT YET RUN",
+  "benchmark": "configs/phase3_freeze_manifest.json",
+  "real_model_calls": 0,
+  "note": "This is an infrastructure placeholder, not an empirical result."
+}

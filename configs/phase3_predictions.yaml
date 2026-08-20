@@ -1,0 +1,35 @@
+{
+  "schema_version": "phase3-predictions-v1",
+  "registered_before_real_results": true,
+  "result_status": "NOT YET RUN",
+  "predictions": {
+    "P1": {
+      "statement": "Strong harnesses benefit lower-capability models more.",
+      "direction_locked": true
+    },
+    "P2": {
+      "statement": "Critique mainly improves risk recall.",
+      "direction_locked": true
+    },
+    "P3": {
+      "statement": "Verification mainly improves control quality.",
+      "direction_locked": true
+    },
+    "P4": {
+      "statement": "Context-partitioned specialization gives modest gains at matched budget.",
+      "direction_locked": true
+    },
+    "P5": {
+      "statement": "Persistent state reduces redundant work but can increase anchoring.",
+      "direction_locked": true
+    },
+    "P6": {
+      "statement": "Harness gains carry substantial workflow, token, latency, and cost overhead.",
+      "direction_locked": true
+    },
+    "P7": {
+      "statement": "Strong harnesses cannot fully eliminate residual model limitations.",
+      "direction_locked": true
+    }
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "schema_version": "phase3-benchmark-observable-v1",
+  "corpus_version": "synthetic-credit-2026q3-v1",
+  "result_status": "NOT YET RUN",
+  "episodes": [
+    {
+      "episode_id": "p3-eval-contradiction-001",
+      "family": "contradictory_evidence",
+      "difficulty": 4,
+      "task_instruction": "Assess credit attractiveness while reconciling all material evidence.",
+      "evidence": [
+        {"evidence_id": "CE1", "source": "filing", "text": "Leverage improved from 4.1x to 3.5x."},
+        {"evidence_id": "CE2", "source": "cash flow", "text": "Free cash flow deteriorated to negative $0.3bn."},
+        {"evidence_id": "CE3", "source": "market", "text": "CDS widened 45bp while cash bonds were stable."}
+      ],
+      "available_tools": [],
+      "split": "evaluation"
+    },
+    {
+      "episode_id": "p3-eval-cheapness-001",
+      "family": "misleading_cheapness",
+      "difficulty": 4,
+      "task_instruction": "Determine whether the apparent spread cheapness is attractive.",
+      "evidence": [
+        {"evidence_id": "MC1", "source": "pricing", "text": "The bond trades 70bp wider than peers."},
+        {"evidence_id": "MC2", "source": "debt footnote", "text": "Collateral moved away from bondholders."},
+        {"evidence_id": "MC3", "source": "rating note", "text": "Outlook is negative and covenants are weak."}
+      ],
+      "available_tools": [],
+      "split": "evaluation"
+    },
+    {
+      "episode_id": "p3-eval-tool-001",
+      "family": "tool_necessity",
+      "difficulty": 3,
+      "task_instruction": "Calculate the stress loss and determine whether escalation is required.",
+      "evidence": [
+        {"evidence_id": "TN1", "source": "position", "text": "Market value is $12m and spread duration is 4.6."},
+        {"evidence_id": "TN2", "source": "scenario", "text": "Spread widens 125bp and rates fall 35bp."},
+        {"evidence_id": "TN3", "source": "policy", "text": "Loss above $500,000 requires escalation."}
+      ],
+      "available_tools": ["scenario_loss"],
+      "split": "evaluation"
+    },
+    {
+      "episode_id": "p3-eval-distractors-001",
+      "family": "retrieval_distractors",
+      "difficulty": 4,
+      "task_instruction": "Assess the named issuer using only issuer-matched current evidence.",
+      "evidence": [
+        {"evidence_id": "RD1", "source": "current filing", "text": "Target issuer debt rose 18%."},
+        {"evidence_id": "RD2", "source": "other issuer", "text": "A similarly named issuer reduced debt 18%."},
+        {"evidence_id": "RD3", "source": "pricing", "text": "Target issuer bonds widened 55bp."}
+      ],
+      "available_tools": [],
+      "split": "evaluation"
+    },
+    {
+      "episode_id": "p3-eval-stale-001",
+      "family": "stale_evidence",
+      "difficulty": 4,
+      "task_instruction": "Update the thesis as of 2026-09-30 using valid evidence versions.",
+      "evidence": [
+        {"evidence_id": "SE1", "source": "2025 filing", "text": "Liquidity was strong and leverage was 2.8x; superseded 2026-03-31."},
+        {"evidence_id": "SE2", "source": "2026 filing", "text": "Liquidity declined and leverage rose to 4.2x; supersedes SE1."}
+      ],
+      "available_tools": [],
+      "split": "evaluation"
+    },
+    {
+      "episode_id": "p3-dev-missing-001",
+      "family": "missing_data",
+      "difficulty": 3,
+      "task_instruction": "Assess the issuer without inventing the omitted segment EBITDA.",
+      "evidence": [
+        {"evidence_id": "MD1", "source": "filing", "text": "Debt is $6.2bn; segment EBITDA is omitted."},
+        {"evidence_id": "MD2", "source": "pricing", "text": "Five-year spread is 185bp."}
+      ],
+      "available_tools": [],
+      "split": "development"
+    },
+    {
+      "episode_id": "p3-eval-scenario-001",
+      "family": "scenario_sensitivity",
+      "difficulty": 4,
+      "task_instruction": "Evaluate base and downside sensitivity before deciding.",
+      "evidence": [
+        {"evidence_id": "SS1", "source": "base case", "text": "Leverage falls to 3.2x if margins recover."},
+        {"evidence_id": "SS2", "source": "downside", "text": "Leverage rises to 5.1x if volumes fall 8%."}
+      ],
+      "available_tools": ["scenario_loss"],
+      "split": "evaluation"
+    },
+    {
+      "episode_id": "p3-eval-correlation-001",
+      "family": "false_correlation",
+      "difficulty": 4,
+      "task_instruction": "Assess the claimed causal relationship and credit implications.",
+      "evidence": [
+        {"evidence_id": "FC1", "source": "chart", "text": "Spread and web traffic moved together for three months."},
+        {"evidence_id": "FC2", "source": "filing", "text": "Debt rose after a separately announced acquisition."}
+      ],
+      "available_tools": [],
+      "split": "evaluation"
+    },
+    {
+      "episode_id": "p3-eval-multihop-001",
+      "family": "multi_hop_evidence",
+      "difficulty": 5,
+      "task_instruction": "Connect covenant, refinancing, and cash-flow evidence into a thesis.",
+      "evidence": [
+        {"evidence_id": "MH1", "source": "covenant", "text": "A springing covenant activates below $400m liquidity."},
+        {"evidence_id": "MH2", "source": "maturity schedule", "text": "$900m matures in 14 months."},
+        {"evidence_id": "MH3", "source": "forecast", "text": "Downside liquidity is $350m."}
+      ],
+      "available_tools": ["liquidity_runway"],
+      "split": "evaluation"
+    },
+    {
+      "episode_id": "p3-dev-ambiguity-001",
+      "family": "instruction_ambiguity",
+      "difficulty": 3,
+      "task_instruction": "Recommend the best bond without specifying whether best means lowest risk or highest excess return.",
+      "evidence": [
+        {"evidence_id": "IA1", "source": "bond A", "text": "Low spread, low leverage, short duration."},
+        {"evidence_id": "IA2", "source": "bond B", "text": "Wide spread, high leverage, long duration."}
+      ],
+      "available_tools": [],
+      "split": "development"
+    },
+    {
+      "episode_id": "p3-eval-premise-001",
+      "family": "premise_error",
+      "difficulty": 4,
+      "task_instruction": "The issuer's leverage improved materially. Explain why its bonds remain cheap.",
+      "evidence": [
+        {"evidence_id": "PE1", "source": "filing", "text": "Net leverage worsened from 3.4x to 4.6x."},
+        {"evidence_id": "PE2", "source": "pricing", "text": "Spread widened 40bp."}
+      ],
+      "available_tools": [],
+      "split": "evaluation"
+    },
+    {
+      "episode_id": "p3-eval-conflict-001",
+      "family": "conflicting_sources",
+      "difficulty": 5,
+      "task_instruction": "Assess liquidity while preserving unresolved source disagreement.",
+      "evidence": [
+        {"evidence_id": "CS1", "source": "issuer release", "text": "Available liquidity is $1.2bn."},
+        {"evidence_id": "CS2", "source": "trustee notice", "text": "Only $0.7bn is presently drawable."}
+      ],
+      "available_tools": [],
+      "split": "evaluation"
+    },
+    {
+      "episode_id": "p3-dev-tool-failure-001",
+      "family": "partial_tool_failure",
+      "difficulty": 4,
+      "task_instruction": "Complete the scenario analysis and identify missing tool information.",
+      "evidence": [
+        {"evidence_id": "PT1", "source": "tool response", "text": "Base-case output is available; downside output timed out."}
+      ],
+      "available_tools": ["scenario_loss"],
+      "split": "development"
+    },
+    {
+      "episode_id": "p3-eval-citation-001",
+      "family": "citation_temptation",
+      "difficulty": 4,
+      "task_instruction": "Assess covenant headroom and cite only exact support.",
+      "evidence": [
+        {"evidence_id": "CT1", "source": "sector report", "text": "Sector covenants usually permit 5.0x leverage."},
+        {"evidence_id": "CT2", "source": "issuer indenture", "text": "The issuer covenant threshold is not stated in this excerpt."}
+      ],
+      "available_tools": [],
+      "split": "evaluation"
+    },
+    {
+      "episode_id": "p3-eval-confidence-001",
+      "family": "confidence_trap",
+      "difficulty": 5,
+      "task_instruction": "Provide a thesis and confidence assessment given materially incomplete evidence.",
+      "evidence": [
+        {"evidence_id": "CTP1", "source": "filing excerpt", "text": "Debt is disclosed but current EBITDA and liquidity are absent."},
+        {"evidence_id": "CTP2", "source": "stale pricing", "text": "The last observable spread is 90 days old."}
+      ],
+      "available_tools": [],
+      "split": "evaluation"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "schema_version": "phase3-protocol-v1",
+  "harness_version": "phase2-harness-v1-frozen",
+  "presets": {
+    "smoke": {
+      "families": ["contradictory_evidence", "premise_error"],
+      "repetitions": 1
+    },
+    "pilot": {
+      "families": [
+        "contradictory_evidence",
+        "tool_necessity",
+        "stale_evidence",
+        "premise_error",
+        "citation_temptation",
+        "confidence_trap"
+      ],
+      "repetitions": 2
+    },
+    "full": {
+      "families": [
+        "contradictory_evidence",
+        "misleading_cheapness",
+        "tool_necessity",
+        "retrieval_distractors",
+        "stale_evidence",
+        "missing_data",
+        "scenario_sensitivity",
+        "false_correlation",
+        "multi_hop_evidence",
+        "instruction_ambiguity",
+        "premise_error",
+        "conflicting_sources",
+        "partial_tool_failure",
+        "citation_temptation",
+        "confidence_trap"
+      ],
+      "repetitions": 3
+    }
+  },
+  "limits": {
+    "max_model_calls": 4000,
+    "max_calls_per_episode": 10,
+    "max_total_tokens": 10000000,
+    "max_estimated_cost": null,
+    "max_retries": 2
+  },
+  "privacy": "Only repository synthetic benchmark inputs may be sent. Never send confidential or user data."
+}

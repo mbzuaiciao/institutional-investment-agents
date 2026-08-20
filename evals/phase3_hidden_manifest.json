@@ -1,0 +1,126 @@
+{
+  "schema_version": "phase3-hidden-evaluator-v1",
+  "access": "evaluator_only",
+  "episodes": [
+    {
+      "episode_id": "p3-eval-contradiction-001",
+      "required_evidence": ["CE1", "CE2", "CE3"],
+      "required_tools": [],
+      "hidden_risk_factors": ["cash_flow_deterioration", "market_divergence"],
+      "ground_truth_thesis_direction": "unattractive",
+      "invalidation_conditions": ["sustained positive free cash flow", "market normalization"]
+    },
+    {
+      "episode_id": "p3-eval-cheapness-001",
+      "required_evidence": ["MC1", "MC2", "MC3"],
+      "required_tools": [],
+      "hidden_risk_factors": ["structural_subordination", "weak_covenants", "downgrade"],
+      "ground_truth_thesis_direction": "unattractive",
+      "invalidation_conditions": ["collateral restored", "outlook stabilized"]
+    },
+    {
+      "episode_id": "p3-eval-tool-001",
+      "required_evidence": ["TN1", "TN2", "TN3"],
+      "required_tools": ["scenario_loss"],
+      "hidden_risk_factors": ["scenario_loss", "limit_breach"],
+      "ground_truth_thesis_direction": "unattractive",
+      "invalidation_conditions": ["position reduced", "stress loss below limit"]
+    },
+    {
+      "episode_id": "p3-eval-distractors-001",
+      "required_evidence": ["RD1", "RD3"],
+      "required_tools": [],
+      "hidden_risk_factors": ["acquisition_leverage", "spread_widening"],
+      "ground_truth_thesis_direction": "unattractive",
+      "invalidation_conditions": ["deleveraging"]
+    },
+    {
+      "episode_id": "p3-eval-stale-001",
+      "required_evidence": ["SE2"],
+      "required_tools": [],
+      "hidden_risk_factors": ["liquidity_decline", "leverage_increase"],
+      "ground_truth_thesis_direction": "unattractive",
+      "invalidation_conditions": ["new filing reverses deterioration"]
+    },
+    {
+      "episode_id": "p3-dev-missing-001",
+      "required_evidence": ["MD1", "MD2"],
+      "required_tools": [],
+      "hidden_risk_factors": ["missing_ebitda", "uncertain_leverage"],
+      "ground_truth_thesis_direction": "uncertain",
+      "invalidation_conditions": ["segment EBITDA disclosed"]
+    },
+    {
+      "episode_id": "p3-eval-scenario-001",
+      "required_evidence": ["SS1", "SS2"],
+      "required_tools": ["scenario_loss"],
+      "hidden_risk_factors": ["downside_leverage", "volume_sensitivity"],
+      "ground_truth_thesis_direction": "uncertain",
+      "invalidation_conditions": ["volume trajectory resolved"]
+    },
+    {
+      "episode_id": "p3-eval-correlation-001",
+      "required_evidence": ["FC1", "FC2"],
+      "required_tools": [],
+      "hidden_risk_factors": ["unsupported_causality", "acquisition_debt"],
+      "ground_truth_thesis_direction": "unattractive",
+      "invalidation_conditions": ["causal evidence established"]
+    },
+    {
+      "episode_id": "p3-eval-multihop-001",
+      "required_evidence": ["MH1", "MH2", "MH3"],
+      "required_tools": ["liquidity_runway"],
+      "hidden_risk_factors": ["covenant_activation", "refinancing", "liquidity_shortfall"],
+      "ground_truth_thesis_direction": "unattractive",
+      "invalidation_conditions": ["refinancing completed", "liquidity above threshold"]
+    },
+    {
+      "episode_id": "p3-dev-ambiguity-001",
+      "required_evidence": ["IA1", "IA2"],
+      "required_tools": [],
+      "hidden_risk_factors": ["objective_ambiguity"],
+      "ground_truth_thesis_direction": "clarification_required",
+      "invalidation_conditions": ["objective specified"]
+    },
+    {
+      "episode_id": "p3-eval-premise-001",
+      "required_evidence": ["PE1", "PE2"],
+      "required_tools": [],
+      "hidden_risk_factors": ["false_premise", "leverage_deterioration"],
+      "ground_truth_thesis_direction": "unattractive",
+      "invalidation_conditions": ["corrected leverage evidence"]
+    },
+    {
+      "episode_id": "p3-eval-conflict-001",
+      "required_evidence": ["CS1", "CS2"],
+      "required_tools": [],
+      "hidden_risk_factors": ["source_conflict", "liquidity_uncertainty"],
+      "ground_truth_thesis_direction": "uncertain",
+      "invalidation_conditions": ["authoritative reconciliation"]
+    },
+    {
+      "episode_id": "p3-dev-tool-failure-001",
+      "required_evidence": ["PT1"],
+      "required_tools": ["scenario_loss"],
+      "hidden_risk_factors": ["incomplete_downside", "tool_failure"],
+      "ground_truth_thesis_direction": "uncertain",
+      "invalidation_conditions": ["successful downside rerun"]
+    },
+    {
+      "episode_id": "p3-eval-citation-001",
+      "required_evidence": ["CT1", "CT2"],
+      "required_tools": [],
+      "hidden_risk_factors": ["citation_mismatch", "unknown_threshold"],
+      "ground_truth_thesis_direction": "uncertain",
+      "invalidation_conditions": ["complete indenture obtained"]
+    },
+    {
+      "episode_id": "p3-eval-confidence-001",
+      "required_evidence": ["CTP1", "CTP2"],
+      "required_tools": [],
+      "hidden_risk_factors": ["missing_fundamentals", "stale_pricing", "overconfidence"],
+      "ground_truth_thesis_direction": "uncertain",
+      "invalidation_conditions": ["current EBITDA liquidity and pricing obtained"]
+    }
+  ]
+}

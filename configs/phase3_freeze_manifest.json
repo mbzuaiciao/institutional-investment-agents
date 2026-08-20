@@ -1,0 +1,17 @@
+{
+  "schema_version": "phase3-freeze-v1",
+  "result_status": "NOT YET RUN",
+  "frozen_files": {
+    "configs/phase3_benchmark.yaml": "1235fc91464a61403eb54b50cf79e97485f8abba5d286fff16044a2fdf379cfa",
+    "evals/phase3_hidden_manifest.json": "5b54d7f2556f08c604ec6ffdcff1d5744f03141edd4452cef06c5e75e9400c0d",
+    "configs/phase3_protocol.yaml": "5fcad234c982fe2ca343824d4c70a9588ccf6abb5301cceb364740ce82c1e241",
+    "configs/phase3_predictions.yaml": "97baa584e03e9ef459b68d0204626a5af6075a72de6eb7b9e53e98e5955b464e",
+    "configs/phase3_counterfactuals.yaml": "b77e901f1f079150b4b061720fd8902633e50ca11931dafd4b55d8b020fced55",
+    "src/institutional_investment_agents/prompts/registry.py": "af25d9af87fbd556bfe816af93d017e1441853a85a5417e6251b5812366be41c",
+    "src/institutional_investment_agents/harness.py": "31552aa475cab748fd5d99cfdb327623cfc9916b39550eb7e5dd6fd412d37b12",
+    "src/institutional_investment_agents/phase3_evaluator.py": "cccf65db4c29f85a89d1dbc7909c99323dd63842475fdda1e7ea11ea8a38ab47",
+    "src/institutional_investment_agents/phase3_metrics.py": "4e9d9dea5bcfdaab695e587e26bf8ed57c5d65db9460451216b71613970e04e7",
+    "src/institutional_investment_agents/phase3_analysis.py": "06250d76fa58ffc645ca194d7e815bdce9daab0e07a4e6d1b12336c89d5512ca"
+  },
+  "freeze_rule": "Any content change requires a new version and separately named exploratory or confirmatory protocol."
+}

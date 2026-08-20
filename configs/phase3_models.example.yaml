@@ -1,0 +1,36 @@
+{
+  "schema_version": "phase3-model-config-v1",
+  "models": [
+    {
+      "identifier": "R0",
+      "backend": "openai_compatible",
+      "model": "configure-lower-cost-model",
+      "declared_tier": "lower-capability/lower-cost",
+      "temperature": 0,
+      "max_output_tokens": 1200,
+      "timeout_seconds": 60,
+      "retries": 2
+    },
+    {
+      "identifier": "R1",
+      "backend": "openai_compatible",
+      "model": "configure-mid-capability-model",
+      "declared_tier": "mid-capability",
+      "temperature": 0,
+      "max_output_tokens": 1200,
+      "timeout_seconds": 60,
+      "retries": 2
+    },
+    {
+      "identifier": "R2",
+      "backend": "openai_compatible",
+      "model": "configure-higher-capability-model",
+      "declared_tier": "higher-capability",
+      "temperature": 0,
+      "max_output_tokens": 1200,
+      "timeout_seconds": 60,
+      "retries": 2
+    }
+  ],
+  "note": "Declared tiers are hypotheses, not observed benchmark rankings. Replace model names before an approved real run."
+}

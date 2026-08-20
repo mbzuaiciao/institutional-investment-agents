@@ -30,3 +30,25 @@ Phase 2 records failures before and after harness controls. An **injected failur
 | Memory failure | Prior state is forgotten, stale, or incorrectly anchors an update. | Compare current state with the longitudinal episode history. | Both | forgetting, anchoring, revision quality |
 
 The executable mapping is [`failure_taxonomy.py`](../src/institutional_investment_agents/failure_taxonomy.py). It allows analyses to move beyond “architecture A scored higher” toward “architecture A prevented, detected, or repaired these failure types.”
+
+## Phase 3 real-model candidate taxonomy
+
+**Observation status: NOT YET RUN.** The categories below are preregistered detection targets, not observed failures in this repository. A category moves into the observed taxonomy only when a labeled real-model run supplies a request ID and auditable example.
+
+| Candidate failure | Detection criterion where practical | Surface | Metrics |
+|---|---|---|---|
+| Schema drift | Response fails the versioned schema before/after bounded repair. | Model/shared | parse status, repair attempts |
+| Instruction forgetting | Required task constraint is absent from the structured response. | Model | constraint completion |
+| Hallucinated evidence | A cited evidence ID or source is absent from the observable corpus. | Model/shared | unsupported claims, invalid citations |
+| Citation laundering | A real source is cited for a more specific claim than its text supports. | Model/shared | evidence mismatch, citation validity |
+| Tool avoidance / excessive tool use | Required tool is absent, or normalized duplicate/unnecessary calls occur. | Model/shared | tool necessity, duplicate calls, cost |
+| Authority bias | Retrieved text is accepted despite conflict, staleness, or weak authority. | Model/shared | contradiction detection, stale use |
+| Premature convergence | Thesis is fixed before required tasks or conflicting evidence are resolved. | Model/shared | task completion, revisions |
+| Critique compliance without revision | Model acknowledges a valid challenge but leaves the defective claim unchanged. | Model | beneficial revisions, unresolved failures |
+| Superficial contradiction acknowledgement | Conflict is mentioned without preserving uncertainty or reconciling implications. | Model | contradiction resolution quality |
+| Overconfident synthesis | Self-reported confidence is high despite incorrect or unsupported claims. | Model | calibration error, support rate |
+| Anchoring / stale-memory persistence | Prior thesis or superseded evidence improperly survives an update. | Model/shared | anchoring, stale use, revision quality |
+| Unsupported causal inference | Correlation or sequence is presented as causation without evidence. | Model | causal-support errors |
+| False numerical precision | Precision exceeds evidence/tool resolution or is invented after tool failure. | Model/shared | calculation traceability |
+
+Provider timeouts, rate limits, server errors, truncation, and malformed envelopes are recorded separately as infrastructure failures so they are not mislabeled as research failures.
