@@ -1,6 +1,6 @@
 # Experiment design
 
-## Controlled first phase
+## Phase 1: controlled deterministic design
 
 The first phase prioritizes causal clarity and reproducibility over live-market realism. All default runs use [`generate_universe(seed)`](../src/institutional_investment_agents/dataset.py), local retrieval, deterministic tools, and deterministic workflow policies. No network, API key, or licensed dataset is required.
 
@@ -46,3 +46,9 @@ The capstone is a progressive architecture comparison, not a sequence of pure on
 The capstone currently emits task completion, directional accuracy, risk-factor recall, claim support rate, citation validity, evidence coverage, unsupported-claim count, unresolved contradictions, tool-call count, audit steps, and a transparent composite research-quality score. The score weights direction at 30%, risk recall at 25%, claim support at 25%, and task completion at 20%. Component metrics should be inspected rather than treating the composite as an objective truth.
 
 Tests separately validate financial calculations, routing, schemas, support enforcement, audit sequencing, and reproducibility. Other desired measures—duplicate work, scenario coverage, revisions, latency, and model cost—are part of the evaluation design but are not all emitted by the current deterministic capstone. See [evaluation framework](evaluation_framework.md).
+
+## Phase 2: model × harness factorial
+
+Phase 2 crosses three operational model profiles with H0 minimal, H1 structured, and H2 strong harnesses. It uses nine hard episode families and seeds 11, 23, 37, and 53, yielding 324 primary runs and 36 observations per cell. Cell reports include mean, standard deviation, and approximate 95% normal intervals. A balanced ANOVA-style sum-of-squares decomposition reports model, harness, interaction, and residual shares without significance claims.
+
+Focused studies use paired seeds and shared base-analysis random streams. Critic on/off has 96 runs; verifier on/off 216; context-partitioned specialization 96; and stateless/persistent memory 24 five-episode runs. The full artifact contains 756 run records in [`phase2_capstone.json`](../results/phase2_capstone.json), with cell summaries in [`phase2_summary.csv`](../results/phase2_summary.csv). Detailed controls are documented in the [Phase 2 report](phase2_model_vs_harness.md).

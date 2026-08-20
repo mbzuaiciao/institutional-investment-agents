@@ -1,6 +1,6 @@
 # Results and findings
 
-## Reading the results
+## Phase 1: reading the results
 
 The checked-in capstone report is [`results/capstone.md`](../results/capstone.md), backed by the run-level records in [`results/capstone.json`](../results/capstone.json). Values below are means across the relevant deterministic synthetic cases. They are benchmark observations, not estimates of live investment performance or production-model quality.
 
@@ -56,3 +56,11 @@ The evidence supports the possibility that:
 Tools and structured claims alter how information enters the research artifact. Explicit workflows alter required coverage. Critics alter error discovery. Verification alters observability and control. Nominal specialization, an extra verifier over already-supported claims, and a persistence flag without longitudinal tasks add sophistication without measurable quality gains here.
 
 The figures for [claim support](../results/figures/claim_support_rate.png) and [tool calls](../results/figures/tool_calls.png) make the associated grounding and operational trade-offs visible. Null results are retained because the workbench is intended to falsify architectural claims, not justify complexity.
+
+## Phase 2: model and harness effects
+
+Phase 2 preserves the Phase 1 findings and adds stochastic model errors. Quality under H0/H1/H2 is 63.02/76.46/82.60 for weak, 75.88/82.99/92.47 for medium, and 91.55/94.83/98.95 for strong. The strong-harness benefit is therefore largest for the weak model, but strong/H0 still exceeds weak/H2.
+
+Critique raises risk recall by 24.48pp weak, 26.56pp medium, and 5.21pp strong. Verification reduces unsupported claims for every profile and raises control quality by more than 11 points, while answer-quality gains remain below 1.5 points. Context-partitioned specialization produces modest, heterogeneous gains at the same model-call budget. Persistent state cuts redundant operations from 15 to 6, improves medium/strong update accuracy, and harms the weak profile through anchoring.
+
+The checked-in [Phase 2 capstone](../results/phase2_capstone.md), [heatmap](../results/figures/phase2_model_harness_heatmap.png), and [full report](phase2_model_vs_harness.md) contain the complete results and caveats.

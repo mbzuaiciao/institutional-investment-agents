@@ -32,6 +32,12 @@ Some desired metrics are not yet fully instrumented, including duplicate work, r
 
 No claim is made that the current numerical findings generalize directly to production LLM systems, live institutional workflows, or investment performance.
 
-## Why these limits are acceptable in phase one
+## Why these limits are acceptable in Phase 1
 
 The first objective is to validate abstractions and experimental plumbing: typed state, stable provenance, deterministic tools, reproducible configurations, auditable events, and component metrics. Synthetic data and deterministic policies isolate software and harness effects before model sampling, data licensing, and market drift are introduced. This creates a falsifiable baseline. The limits define the next experiments rather than being hidden behind claims of production readiness.
+
+## Additional Phase 2 limitations
+
+The weak/medium/strong profiles and error mappings are designed parameters, not estimates fitted to commercial models. Stochastic outputs reproduce failure categories and causal interventions, not natural language or correlated real-model behavior. Four seeds and nine families leave wide within-cell variation; normal intervals are descriptive. The model/harness sum-of-squares shares are specific to this balanced simulator and score definition.
+
+The optional OpenAI-compatible adapter was tested with a mock transport only. No provider calls were made, so the repository reports no real-model result. Abstract cost units are proportional to simulated token units and are not dollars. The five-episode memory sequence is enough to expose forgetting and anchoring, but not long-horizon organizational memory, correction policies, or data-retention risk.

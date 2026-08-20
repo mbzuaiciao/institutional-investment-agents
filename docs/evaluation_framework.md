@@ -49,3 +49,9 @@ This category matters because two systems can reach the same answer with differe
 An architecture should be judged on a vector of properties rather than a single ranking. Verification can improve auditability without changing conclusion quality. A critic can improve risk recall while adding a step. Specialization can alter ownership without changing behavior. These differences are lost when evaluation considers only the final paragraph or one composite score.
 
 The complete experiment design is documented in [experiment design](experiment_design.md), and current numerical results are in [results and findings](results_and_findings.md).
+
+## Phase 2 additions
+
+Phase 2 records injected, detected, resolved, and unresolved failures; calculation accuracy; contradiction detection; stale-evidence use; inappropriate confidence; correct and unnecessary revisions; false challenges; and separate answer/control quality. `ConfidenceComponents` decomposes evidence, calculation, retrieval, consistency, and model judgment into explicitly uncalibrated heuristic scores.
+
+`CostAccount` records model calls, tool calls, retrieval operations, workflow steps, critic/verifier calls, revision cycles, simulated token units, and abstract cost units. Real adapters can record provider-returned usage metadata. Factorial reports include means, standard deviations, approximate confidence intervals, model/harness/interaction decomposition, and per-run records. The [failure taxonomy](failure_taxonomy.md) connects metrics to causal failure surfaces.

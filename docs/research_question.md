@@ -8,7 +8,7 @@ The question separates architectural activity—more roles, steps, messages, and
 
 The current evidence comes from deterministic synthetic cases. “Supported” below means supported within this benchmark, not established for production LLM systems.
 
-## Hypotheses and current evidence
+## Phase 1 hypotheses and evidence
 
 | Hypothesis | Current status | Evidence and interpretation |
 |---|---|---|
@@ -28,3 +28,9 @@ The evidence is consistent with a more precise proposition:
 Explicit tasks change required coverage. Tools change how arithmetic enters the process. A critic changes error discovery. A verifier changes what is mechanically visible to reviewers. By contrast, assigning the same work to different nominal roles need not alter the research artifact.
 
 These conclusions are bounded by the implementation. The deterministic policy may understate benefits that emerge when real models have different prompts, context limits, or specialist capabilities. The next research phase should cross model capability with harness strength as described in [future work](future_work.md).
+
+## Phase 2 question and hypotheses
+
+Phase 2 asks: **How much performance comes from the model, and how much from the harness?** It pre-registers eight hypotheses covering compensatory harness effects, residual workflow value for strong models, capability-dependent critique, verification under natural errors, context-changing specialization, longitudinal memory, workflow cost, and model-limited failures.
+
+The current synthetic evidence supports H1, H2, H4, H7, and H8 descriptively; partially supports H3 and H6; and conditionally supports H5. In particular, weak/H2 outperforms medium/H0 but remains below strong/H0. The [Phase 2 report](phase2_model_vs_harness.md) gives exact definitions, results, and limitations rather than folding these findings back into Phase 1.

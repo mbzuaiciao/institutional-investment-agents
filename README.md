@@ -6,11 +6,17 @@ An executable, from-first-principles research project for asking a deliberately 
 
 The concrete laboratory is synthetic five-year corporate credit research. The system gathers evidence, performs deterministic calculations, maintains claims and assumptions, challenges a thesis, verifies provenance, passes through an approval gate, and emits both a research memo and an audit trace. It is a research-engineering prototype—not investment advice, a trading system, or a substitute for licensed market data.
 
+The repository now has two preserved research phases. **Phase 1** isolates harness architecture with a deterministic model. **Phase 2** crosses weak, medium, and strong seeded stochastic model profiles with minimal, structured, and strong harnesses on harder research episodes.
+
 ## Why institutional credit research?
 
 Institutional research is not just question answering. A professional workflow must distinguish source facts from calculations, inferences, and judgments; compare issuer fundamentals with market pricing; expose uncertainty and downside; preserve provenance; and support accountable review. That makes credit research a useful test of whether an agent harness improves the epistemic process, rather than merely the prose.
 
 The project therefore scores architectures on task completion, directional accuracy against synthetic ground truth, risk recall, claim support, citation validity, unsupported claims, tool use, and workflow steps. More agents can score worse if they create unsupported or duplicate work.
+
+## Phase 1 and Phase 2
+
+Phase 1 found larger gains from explicit workflow structure and adversarial critique than from nominal specialist labels. Phase 2 introduces natural model errors and a 324-run model × harness factorial. In Phase 2, a strong harness adds 19.58 quality points for the weak model and 7.40 for the strong model. Model and harness profiles explain 26.2% and 12.5% of descriptive score variation; episode/seed residual remains substantial. See the [Phase 2 report](docs/phase2_model_vs_harness.md).
 
 ## Architecture
 
@@ -51,6 +57,8 @@ The core uses no orchestration framework. State transitions, tool contracts, evi
 - [Auditability and Controls](docs/auditability_and_controls.md)
 - [Limitations](docs/limitations.md)
 - [Future Work](docs/future_work.md)
+- [Phase 2: Model vs Harness](docs/phase2_model_vs_harness.md)
+- [Failure Taxonomy](docs/failure_taxonomy.md)
 
 ## Curriculum
 
@@ -68,6 +76,9 @@ The core uses no orchestration framework. State transitions, tool contracts, evi
 | 10 | Human oversight | Approve/revise/reject decision | Showing output is not meaningful oversight. |
 | 11 | Evaluation harness | Repeated controlled configurations | Compare the whole process, including cost proxies. |
 | 12 | Workbench | Integrated institutional workflow | The harness is part of the epistemic system. |
+| 13–15 | Phase 2 foundations | Stochastic failures, model profiles, harness strength | “Weak” and “strong” must be operational definitions. |
+| 16–19 | Controlled attribution | Factorial, critic, verifier, specialization | Benefits depend on model capability and information flow. |
+| 20–22 | Dynamic controls | Longitudinal memory, freshness, failure attribution | State can help, anchor, or preserve stale evidence. |
 
 Run any lesson with, for example, `uv run python tutorials/04_financial_tools.py`.
 
@@ -82,6 +93,8 @@ Run any lesson with, for example, `uv run python tutorials/04_financial_tools.py
 - `run_critic_ablation.py` measures marginal risk recall and added steps.
 - `run_evidence_ablation.py` compares otherwise identical workflows with and without an explicit verifier.
 - `run_capstone.py` compares six variants across multiple seeds and issuers, then writes JSON, Markdown, and four plots.
+- `run_phase2_capstone.py` runs the 3×3 model/harness matrix plus focused critic, verification, specialization, and memory studies.
+- `run_real_model.py` is an optional OpenAI-compatible adapter smoke runner; it is never called by tests or default experiments.
 
 The capstone variants are: A context-only baseline; B single agent with tools; C specialist workflow; D specialists plus critic; E specialists, critic, and verifier; F the full persistent-state configuration. No result is hard-coded or cherry-picked.
 
@@ -106,6 +119,7 @@ uv run pyright
 for tutorial in tutorials/*.py; do uv run python "$tutorial" >/dev/null; done
 for experiment in experiments/run_*.py; do uv run python "$experiment"; done
 uv run python experiments/run_capstone.py
+uv run python experiments/run_phase2_capstone.py
 ```
 
 Source-controlled capstone outputs live in `results/`. Runs record the seed, configuration, architecture, and dataset version. Timestamps are omitted from deterministic comparison artifacts.
@@ -121,7 +135,11 @@ Source-controlled capstone outputs live in `results/`. Runs record the seed, con
 - `verification.py`: mechanical evidence and claim checks.
 - `workflow.py`: configurable end-to-end workbench.
 - `evaluation.py`: architecture experiments, reports, and plots.
+- `stochastic_model.py`, `harness.py`: operational Phase 2 model and harness profiles.
+- `hard_episodes.py`, `longitudinal.py`: difficult and multi-episode research benchmarks.
+- `phase2_runner.py`, `phase2_evaluation.py`: error attribution, factorial analysis, reports, and plots.
+- `adapters.py`: optional provider-neutral OpenAI-compatible backend.
 
 ## Limitations
 
-The data and ground truth are synthetic and simplified. Spread-to-benchmark is not a full option-adjusted-spread calculation; scenario P&L is a transparent duration approximation; default and recovery assumptions are pedagogical. The deterministic model policy does not reproduce the linguistic variability or failure modes of a production LLM. Lexical support checks are not semantic entailment, and the benchmark partially reflects choices made by its authors. Persistent state is intra-run in this prototype, not a production cross-case memory service. There is no licensed data, live pricing, order execution, portfolio optimization, or claim of investment advice. Human approval is represented structurally but simulated by policy for reproducible runs.
+The data, model profiles, error rates, and ground truth are synthetic and simplified. Phase 2 profiles are causal simulators, not calibrated representations of commercial LLMs; the optional real-model adapter was mock-tested only. Spread and portfolio calculations remain pedagogical, verification is partly lexical/rule-based, and human approval is simulated. There is no licensed data, live pricing, execution, portfolio optimization, or investment-advice claim. See [limitations](docs/limitations.md).

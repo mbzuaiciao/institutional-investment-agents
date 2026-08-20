@@ -1,6 +1,6 @@
 # Architecture
 
-## End-to-end system
+## Phase 1 end-to-end system
 
 The implementation makes orchestration explicit in ordinary Python. No agent framework is required to understand the control flow.
 
@@ -87,3 +87,26 @@ Every important transition emits a sequenced `AuditEvent` with an actor, object 
 ## Why more agents do not imply better research
 
 Adding role labels can leave information, tools, constraints, and error-correction behavior unchanged. It may also add duplicate work, inconsistent assumptions, or operational cost. The controlled experiment therefore holds workflow structure, retrieval, tools, cases, and seeds constant while changing only single-agent versus specialist ownership. The resulting scores are equal. Improvements appear when architecture changes what information must be gathered, how claims are grounded, or how the thesis is challenged. That is a narrower and more testable claim than “multi-agent systems are better.”
+
+## Phase 2 extension
+
+Phase 2 adds a typed operation layer above the preserved Phase 1 backend:
+
+```text
+Model profile                    Harness profile
+weak / medium / strong    ×      H0 / H1 / H2
+         │                              │
+         └────── typed ModelRequest ────┘
+                        │
+              hard research episode
+                        │
+            injected model failures
+                        │
+        harness prevent / detect / repair
+                        │
+      quality + control + failure + cost trace
+```
+
+`ModelOperation` covers planning, task execution, routing, retrieval, evidence interpretation, tool selection, claim generation, synthesis, critique, revision, and verification assistance. [`StochasticSyntheticModel`](../src/institutional_investment_agents/stochastic_model.py) maps profile capabilities to seeded failures. [`phase2_runner.py`](../src/institutional_investment_agents/phase2_runner.py) records failures before and after harness controls, keeping model-side error generation distinct from prevention, detection, and repair.
+
+H0/H1/H2 are operational feature bundles in [`harness.py`](../src/institutional_investment_agents/harness.py), not adjectives. Hard episodes, evidence versions, longitudinal state, confidence components, and cost accounts are typed objects. The optional real-model adapter satisfies the same backend interface but is outside default/CI execution.
