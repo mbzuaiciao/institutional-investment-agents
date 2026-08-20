@@ -1,0 +1,1624 @@
+{
+  "issuer_ids": [
+    "NRT",
+    "CRH",
+    "BAY",
+    "VTX"
+  ],
+  "runs": [
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "NRT",
+      "label": "Observation/context-only baseline",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 0.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.0,
+        "research_quality_score": 58.33,
+        "risk_factor_recall": 0.3333,
+        "steps": 15.0,
+        "task_completion": 1.0,
+        "tool_calls": 0.0,
+        "unsupported_claims": 1.0
+      },
+      "seed": 17,
+      "variant": "A"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "CRH",
+      "label": "Observation/context-only baseline",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 0.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.0,
+        "research_quality_score": 56.25,
+        "risk_factor_recall": 0.25,
+        "steps": 15.0,
+        "task_completion": 1.0,
+        "tool_calls": 0.0,
+        "unsupported_claims": 1.0
+      },
+      "seed": 17,
+      "variant": "A"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "BAY",
+      "label": "Observation/context-only baseline",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 0.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.0,
+        "research_quality_score": 56.25,
+        "risk_factor_recall": 0.25,
+        "steps": 15.0,
+        "task_completion": 1.0,
+        "tool_calls": 0.0,
+        "unsupported_claims": 1.0
+      },
+      "seed": 17,
+      "variant": "A"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "VTX",
+      "label": "Observation/context-only baseline",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 0.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.0,
+        "research_quality_score": 75.0,
+        "risk_factor_recall": 1.0,
+        "steps": 15.0,
+        "task_completion": 1.0,
+        "tool_calls": 0.0,
+        "unsupported_claims": 1.0
+      },
+      "seed": 17,
+      "variant": "A"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "NRT",
+      "label": "Observation/context-only baseline",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 0.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.0,
+        "research_quality_score": 58.33,
+        "risk_factor_recall": 0.3333,
+        "steps": 15.0,
+        "task_completion": 1.0,
+        "tool_calls": 0.0,
+        "unsupported_claims": 1.0
+      },
+      "seed": 23,
+      "variant": "A"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "CRH",
+      "label": "Observation/context-only baseline",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 0.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.0,
+        "research_quality_score": 56.25,
+        "risk_factor_recall": 0.25,
+        "steps": 15.0,
+        "task_completion": 1.0,
+        "tool_calls": 0.0,
+        "unsupported_claims": 1.0
+      },
+      "seed": 23,
+      "variant": "A"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "BAY",
+      "label": "Observation/context-only baseline",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 0.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.0,
+        "research_quality_score": 56.25,
+        "risk_factor_recall": 0.25,
+        "steps": 15.0,
+        "task_completion": 1.0,
+        "tool_calls": 0.0,
+        "unsupported_claims": 1.0
+      },
+      "seed": 23,
+      "variant": "A"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "VTX",
+      "label": "Observation/context-only baseline",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 0.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.0,
+        "research_quality_score": 75.0,
+        "risk_factor_recall": 1.0,
+        "steps": 15.0,
+        "task_completion": 1.0,
+        "tool_calls": 0.0,
+        "unsupported_claims": 1.0
+      },
+      "seed": 23,
+      "variant": "A"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "NRT",
+      "label": "Observation/context-only baseline",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 0.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.0,
+        "research_quality_score": 58.33,
+        "risk_factor_recall": 0.3333,
+        "steps": 15.0,
+        "task_completion": 1.0,
+        "tool_calls": 0.0,
+        "unsupported_claims": 1.0
+      },
+      "seed": 41,
+      "variant": "A"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "CRH",
+      "label": "Observation/context-only baseline",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 0.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.0,
+        "research_quality_score": 56.25,
+        "risk_factor_recall": 0.25,
+        "steps": 15.0,
+        "task_completion": 1.0,
+        "tool_calls": 0.0,
+        "unsupported_claims": 1.0
+      },
+      "seed": 41,
+      "variant": "A"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "BAY",
+      "label": "Observation/context-only baseline",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 0.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.0,
+        "research_quality_score": 56.25,
+        "risk_factor_recall": 0.25,
+        "steps": 15.0,
+        "task_completion": 1.0,
+        "tool_calls": 0.0,
+        "unsupported_claims": 1.0
+      },
+      "seed": 41,
+      "variant": "A"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "VTX",
+      "label": "Observation/context-only baseline",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 0.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.0,
+        "research_quality_score": 75.0,
+        "risk_factor_recall": 1.0,
+        "steps": 15.0,
+        "task_completion": 1.0,
+        "tool_calls": 0.0,
+        "unsupported_claims": 1.0
+      },
+      "seed": 41,
+      "variant": "A"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "NRT",
+      "label": "Single research agent with tools",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.5,
+        "research_quality_score": 83.33,
+        "risk_factor_recall": 0.3333,
+        "steps": 24.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 17,
+      "variant": "B"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "CRH",
+      "label": "Single research agent with tools",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.5,
+        "research_quality_score": 81.25,
+        "risk_factor_recall": 0.25,
+        "steps": 24.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 17,
+      "variant": "B"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "BAY",
+      "label": "Single research agent with tools",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.5,
+        "research_quality_score": 81.25,
+        "risk_factor_recall": 0.25,
+        "steps": 24.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 17,
+      "variant": "B"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "VTX",
+      "label": "Single research agent with tools",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.5,
+        "research_quality_score": 100.0,
+        "risk_factor_recall": 1.0,
+        "steps": 24.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 17,
+      "variant": "B"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "NRT",
+      "label": "Single research agent with tools",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.5,
+        "research_quality_score": 83.33,
+        "risk_factor_recall": 0.3333,
+        "steps": 24.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 23,
+      "variant": "B"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "CRH",
+      "label": "Single research agent with tools",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.5,
+        "research_quality_score": 81.25,
+        "risk_factor_recall": 0.25,
+        "steps": 24.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 23,
+      "variant": "B"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "BAY",
+      "label": "Single research agent with tools",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.5,
+        "research_quality_score": 81.25,
+        "risk_factor_recall": 0.25,
+        "steps": 24.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 23,
+      "variant": "B"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "VTX",
+      "label": "Single research agent with tools",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.5,
+        "research_quality_score": 100.0,
+        "risk_factor_recall": 1.0,
+        "steps": 24.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 23,
+      "variant": "B"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "NRT",
+      "label": "Single research agent with tools",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.5,
+        "research_quality_score": 83.33,
+        "risk_factor_recall": 0.3333,
+        "steps": 24.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 41,
+      "variant": "B"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "CRH",
+      "label": "Single research agent with tools",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.5,
+        "research_quality_score": 81.25,
+        "risk_factor_recall": 0.25,
+        "steps": 24.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 41,
+      "variant": "B"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "BAY",
+      "label": "Single research agent with tools",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.5,
+        "research_quality_score": 81.25,
+        "risk_factor_recall": 0.25,
+        "steps": 24.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 41,
+      "variant": "B"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "VTX",
+      "label": "Single research agent with tools",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.5,
+        "research_quality_score": 100.0,
+        "risk_factor_recall": 1.0,
+        "steps": 24.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 41,
+      "variant": "B"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "NRT",
+      "label": "Structured specialist workflow",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.75,
+        "research_quality_score": 91.67,
+        "risk_factor_recall": 0.6667,
+        "steps": 27.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 17,
+      "variant": "C"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "CRH",
+      "label": "Structured specialist workflow",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.75,
+        "research_quality_score": 87.5,
+        "risk_factor_recall": 0.5,
+        "steps": 27.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 17,
+      "variant": "C"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "BAY",
+      "label": "Structured specialist workflow",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.75,
+        "research_quality_score": 87.5,
+        "risk_factor_recall": 0.5,
+        "steps": 27.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 17,
+      "variant": "C"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "VTX",
+      "label": "Structured specialist workflow",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.75,
+        "research_quality_score": 100.0,
+        "risk_factor_recall": 1.0,
+        "steps": 27.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 17,
+      "variant": "C"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "NRT",
+      "label": "Structured specialist workflow",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.75,
+        "research_quality_score": 91.67,
+        "risk_factor_recall": 0.6667,
+        "steps": 27.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 23,
+      "variant": "C"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "CRH",
+      "label": "Structured specialist workflow",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.75,
+        "research_quality_score": 87.5,
+        "risk_factor_recall": 0.5,
+        "steps": 27.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 23,
+      "variant": "C"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "BAY",
+      "label": "Structured specialist workflow",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.75,
+        "research_quality_score": 87.5,
+        "risk_factor_recall": 0.5,
+        "steps": 27.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 23,
+      "variant": "C"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "VTX",
+      "label": "Structured specialist workflow",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.75,
+        "research_quality_score": 100.0,
+        "risk_factor_recall": 1.0,
+        "steps": 27.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 23,
+      "variant": "C"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "NRT",
+      "label": "Structured specialist workflow",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.75,
+        "research_quality_score": 91.67,
+        "risk_factor_recall": 0.6667,
+        "steps": 27.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 41,
+      "variant": "C"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "CRH",
+      "label": "Structured specialist workflow",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.75,
+        "research_quality_score": 87.5,
+        "risk_factor_recall": 0.5,
+        "steps": 27.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 41,
+      "variant": "C"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "BAY",
+      "label": "Structured specialist workflow",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.75,
+        "research_quality_score": 87.5,
+        "risk_factor_recall": 0.5,
+        "steps": 27.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 41,
+      "variant": "C"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "VTX",
+      "label": "Structured specialist workflow",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.75,
+        "research_quality_score": 100.0,
+        "risk_factor_recall": 1.0,
+        "steps": 27.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 41,
+      "variant": "C"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "NRT",
+      "label": "Specialists plus critic",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.75,
+        "research_quality_score": 100.0,
+        "risk_factor_recall": 1.0,
+        "steps": 28.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 17,
+      "variant": "D"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "CRH",
+      "label": "Specialists plus critic",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.75,
+        "research_quality_score": 100.0,
+        "risk_factor_recall": 1.0,
+        "steps": 28.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 17,
+      "variant": "D"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "BAY",
+      "label": "Specialists plus critic",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.75,
+        "research_quality_score": 93.75,
+        "risk_factor_recall": 0.75,
+        "steps": 28.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 17,
+      "variant": "D"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "VTX",
+      "label": "Specialists plus critic",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.75,
+        "research_quality_score": 100.0,
+        "risk_factor_recall": 1.0,
+        "steps": 28.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 17,
+      "variant": "D"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "NRT",
+      "label": "Specialists plus critic",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.75,
+        "research_quality_score": 100.0,
+        "risk_factor_recall": 1.0,
+        "steps": 28.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 23,
+      "variant": "D"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "CRH",
+      "label": "Specialists plus critic",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.75,
+        "research_quality_score": 100.0,
+        "risk_factor_recall": 1.0,
+        "steps": 28.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 23,
+      "variant": "D"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "BAY",
+      "label": "Specialists plus critic",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.75,
+        "research_quality_score": 93.75,
+        "risk_factor_recall": 0.75,
+        "steps": 28.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 23,
+      "variant": "D"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "VTX",
+      "label": "Specialists plus critic",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.75,
+        "research_quality_score": 100.0,
+        "risk_factor_recall": 1.0,
+        "steps": 28.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 23,
+      "variant": "D"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "NRT",
+      "label": "Specialists plus critic",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.75,
+        "research_quality_score": 100.0,
+        "risk_factor_recall": 1.0,
+        "steps": 28.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 41,
+      "variant": "D"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "CRH",
+      "label": "Specialists plus critic",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.75,
+        "research_quality_score": 100.0,
+        "risk_factor_recall": 1.0,
+        "steps": 28.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 41,
+      "variant": "D"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "BAY",
+      "label": "Specialists plus critic",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.75,
+        "research_quality_score": 93.75,
+        "risk_factor_recall": 0.75,
+        "steps": 28.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 41,
+      "variant": "D"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "VTX",
+      "label": "Specialists plus critic",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.75,
+        "research_quality_score": 100.0,
+        "risk_factor_recall": 1.0,
+        "steps": 28.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 41,
+      "variant": "D"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "NRT",
+      "label": "Specialists, critic and verifier",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.75,
+        "research_quality_score": 100.0,
+        "risk_factor_recall": 1.0,
+        "steps": 29.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 17,
+      "variant": "E"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "CRH",
+      "label": "Specialists, critic and verifier",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.75,
+        "research_quality_score": 100.0,
+        "risk_factor_recall": 1.0,
+        "steps": 29.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 17,
+      "variant": "E"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "BAY",
+      "label": "Specialists, critic and verifier",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.75,
+        "research_quality_score": 93.75,
+        "risk_factor_recall": 0.75,
+        "steps": 29.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 17,
+      "variant": "E"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "VTX",
+      "label": "Specialists, critic and verifier",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.75,
+        "research_quality_score": 100.0,
+        "risk_factor_recall": 1.0,
+        "steps": 29.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 17,
+      "variant": "E"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "NRT",
+      "label": "Specialists, critic and verifier",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.75,
+        "research_quality_score": 100.0,
+        "risk_factor_recall": 1.0,
+        "steps": 29.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 23,
+      "variant": "E"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "CRH",
+      "label": "Specialists, critic and verifier",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.75,
+        "research_quality_score": 100.0,
+        "risk_factor_recall": 1.0,
+        "steps": 29.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 23,
+      "variant": "E"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "BAY",
+      "label": "Specialists, critic and verifier",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.75,
+        "research_quality_score": 93.75,
+        "risk_factor_recall": 0.75,
+        "steps": 29.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 23,
+      "variant": "E"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "VTX",
+      "label": "Specialists, critic and verifier",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.75,
+        "research_quality_score": 100.0,
+        "risk_factor_recall": 1.0,
+        "steps": 29.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 23,
+      "variant": "E"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "NRT",
+      "label": "Specialists, critic and verifier",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.75,
+        "research_quality_score": 100.0,
+        "risk_factor_recall": 1.0,
+        "steps": 29.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 41,
+      "variant": "E"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "CRH",
+      "label": "Specialists, critic and verifier",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.75,
+        "research_quality_score": 100.0,
+        "risk_factor_recall": 1.0,
+        "steps": 29.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 41,
+      "variant": "E"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "BAY",
+      "label": "Specialists, critic and verifier",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.75,
+        "research_quality_score": 93.75,
+        "risk_factor_recall": 0.75,
+        "steps": 29.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 41,
+      "variant": "E"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "VTX",
+      "label": "Specialists, critic and verifier",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.75,
+        "research_quality_score": 100.0,
+        "risk_factor_recall": 1.0,
+        "steps": 29.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 41,
+      "variant": "E"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "NRT",
+      "label": "Full workflow with persistent state",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.75,
+        "research_quality_score": 100.0,
+        "risk_factor_recall": 1.0,
+        "steps": 29.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 17,
+      "variant": "F"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "CRH",
+      "label": "Full workflow with persistent state",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.75,
+        "research_quality_score": 100.0,
+        "risk_factor_recall": 1.0,
+        "steps": 29.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 17,
+      "variant": "F"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "BAY",
+      "label": "Full workflow with persistent state",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.75,
+        "research_quality_score": 93.75,
+        "risk_factor_recall": 0.75,
+        "steps": 29.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 17,
+      "variant": "F"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "VTX",
+      "label": "Full workflow with persistent state",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.75,
+        "research_quality_score": 100.0,
+        "risk_factor_recall": 1.0,
+        "steps": 29.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 17,
+      "variant": "F"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "NRT",
+      "label": "Full workflow with persistent state",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.75,
+        "research_quality_score": 100.0,
+        "risk_factor_recall": 1.0,
+        "steps": 29.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 23,
+      "variant": "F"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "CRH",
+      "label": "Full workflow with persistent state",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.75,
+        "research_quality_score": 100.0,
+        "risk_factor_recall": 1.0,
+        "steps": 29.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 23,
+      "variant": "F"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "BAY",
+      "label": "Full workflow with persistent state",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.75,
+        "research_quality_score": 93.75,
+        "risk_factor_recall": 0.75,
+        "steps": 29.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 23,
+      "variant": "F"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "VTX",
+      "label": "Full workflow with persistent state",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.75,
+        "research_quality_score": 100.0,
+        "risk_factor_recall": 1.0,
+        "steps": 29.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 23,
+      "variant": "F"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "NRT",
+      "label": "Full workflow with persistent state",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.75,
+        "research_quality_score": 100.0,
+        "risk_factor_recall": 1.0,
+        "steps": 29.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 41,
+      "variant": "F"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "CRH",
+      "label": "Full workflow with persistent state",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.75,
+        "research_quality_score": 100.0,
+        "risk_factor_recall": 1.0,
+        "steps": 29.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 41,
+      "variant": "F"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "BAY",
+      "label": "Full workflow with persistent state",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.75,
+        "research_quality_score": 93.75,
+        "risk_factor_recall": 0.75,
+        "steps": 29.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 41,
+      "variant": "F"
+    },
+    {
+      "dataset_version": "synthetic-credit-v1",
+      "issuer_id": "VTX",
+      "label": "Full workflow with persistent state",
+      "metrics": {
+        "citation_validity": 1.0,
+        "claim_support_rate": 1.0,
+        "contradictions": 0.0,
+        "directional_accuracy": 1.0,
+        "evidence_coverage": 0.75,
+        "research_quality_score": 100.0,
+        "risk_factor_recall": 1.0,
+        "steps": 29.0,
+        "task_completion": 1.0,
+        "tool_calls": 3.0,
+        "unsupported_claims": 0.0
+      },
+      "seed": 41,
+      "variant": "F"
+    }
+  ],
+  "schema_version": 1,
+  "seeds": [
+    17,
+    23,
+    41
+  ],
+  "summary": {
+    "A": {
+      "citation_validity": 1.0,
+      "claim_support_rate": 0.0,
+      "contradictions": 0.0,
+      "directional_accuracy": 1.0,
+      "evidence_coverage": 0.0,
+      "label": "Observation/context-only baseline",
+      "research_quality_score": 61.4575,
+      "risk_factor_recall": 0.4583,
+      "steps": 15.0,
+      "task_completion": 1.0,
+      "tool_calls": 0.0,
+      "unsupported_claims": 1.0
+    },
+    "B": {
+      "citation_validity": 1.0,
+      "claim_support_rate": 1.0,
+      "contradictions": 0.0,
+      "directional_accuracy": 1.0,
+      "evidence_coverage": 0.5,
+      "label": "Single research agent with tools",
+      "research_quality_score": 86.4575,
+      "risk_factor_recall": 0.4583,
+      "steps": 24.0,
+      "task_completion": 1.0,
+      "tool_calls": 3.0,
+      "unsupported_claims": 0.0
+    },
+    "C": {
+      "citation_validity": 1.0,
+      "claim_support_rate": 1.0,
+      "contradictions": 0.0,
+      "directional_accuracy": 1.0,
+      "evidence_coverage": 0.75,
+      "label": "Structured specialist workflow",
+      "research_quality_score": 91.6675,
+      "risk_factor_recall": 0.6667,
+      "steps": 27.0,
+      "task_completion": 1.0,
+      "tool_calls": 3.0,
+      "unsupported_claims": 0.0
+    },
+    "D": {
+      "citation_validity": 1.0,
+      "claim_support_rate": 1.0,
+      "contradictions": 0.0,
+      "directional_accuracy": 1.0,
+      "evidence_coverage": 0.75,
+      "label": "Specialists plus critic",
+      "research_quality_score": 98.4375,
+      "risk_factor_recall": 0.9375,
+      "steps": 28.0,
+      "task_completion": 1.0,
+      "tool_calls": 3.0,
+      "unsupported_claims": 0.0
+    },
+    "E": {
+      "citation_validity": 1.0,
+      "claim_support_rate": 1.0,
+      "contradictions": 0.0,
+      "directional_accuracy": 1.0,
+      "evidence_coverage": 0.75,
+      "label": "Specialists, critic and verifier",
+      "research_quality_score": 98.4375,
+      "risk_factor_recall": 0.9375,
+      "steps": 29.0,
+      "task_completion": 1.0,
+      "tool_calls": 3.0,
+      "unsupported_claims": 0.0
+    },
+    "F": {
+      "citation_validity": 1.0,
+      "claim_support_rate": 1.0,
+      "contradictions": 0.0,
+      "directional_accuracy": 1.0,
+      "evidence_coverage": 0.75,
+      "label": "Full workflow with persistent state",
+      "research_quality_score": 98.4375,
+      "risk_factor_recall": 0.9375,
+      "steps": 29.0,
+      "task_completion": 1.0,
+      "tool_calls": 3.0,
+      "unsupported_claims": 0.0
+    }
+  },
+  "variants": [
+    {
+      "key": "A",
+      "label": "Observation/context-only baseline",
+      "overrides": {
+        "architecture": "context_only",
+        "critic_enabled": false,
+        "explicit_workflow": false,
+        "persistent_state": false,
+        "specialists_enabled": false,
+        "structured_outputs": false,
+        "tool_access": false,
+        "verification_enabled": false
+      }
+    },
+    {
+      "key": "B",
+      "label": "Single research agent with tools",
+      "overrides": {
+        "architecture": "single_tools",
+        "critic_enabled": false,
+        "explicit_workflow": false,
+        "specialists_enabled": false,
+        "structured_outputs": true,
+        "tool_access": true,
+        "verification_enabled": false
+      }
+    },
+    {
+      "key": "C",
+      "label": "Structured specialist workflow",
+      "overrides": {
+        "architecture": "specialists",
+        "critic_enabled": false,
+        "explicit_workflow": true,
+        "specialists_enabled": true,
+        "structured_outputs": true,
+        "tool_access": true,
+        "verification_enabled": false
+      }
+    },
+    {
+      "key": "D",
+      "label": "Specialists plus critic",
+      "overrides": {
+        "architecture": "specialists_critic",
+        "critic_enabled": true,
+        "explicit_workflow": true,
+        "specialists_enabled": true,
+        "structured_outputs": true,
+        "tool_access": true,
+        "verification_enabled": false
+      }
+    },
+    {
+      "key": "E",
+      "label": "Specialists, critic and verifier",
+      "overrides": {
+        "architecture": "full_verified",
+        "critic_enabled": true,
+        "explicit_workflow": true,
+        "specialists_enabled": true,
+        "structured_outputs": true,
+        "tool_access": true,
+        "verification_enabled": true
+      }
+    },
+    {
+      "key": "F",
+      "label": "Full workflow with persistent state",
+      "overrides": {
+        "architecture": "full_persistent",
+        "critic_enabled": true,
+        "explicit_workflow": true,
+        "persistent_state": true,
+        "specialists_enabled": true,
+        "structured_outputs": true,
+        "tool_access": true,
+        "verification_enabled": true
+      }
+    }
+  ]
+}
