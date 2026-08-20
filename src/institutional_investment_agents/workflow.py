@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+from collections.abc import Callable
 from dataclasses import dataclass
 from typing import Any, cast
 
@@ -17,6 +18,7 @@ from institutional_investment_agents.schemas import (
     Citation,
     Claim,
     ClaimType,
+    EvidenceItem,
     InvestmentThesis,
     ResearchMemo,
     ResearchObservation,
@@ -75,9 +77,23 @@ class ResearchWorkbench:
         self.retriever = LocalRetriever(self.universe.documents)
         self.tools = ToolRegistry()
 
-    def run(self, issuer_id: str = "NRT") -> ResearchRun:
+    def create_plan(self, question: ResearchQuestion) -> ResearchPlan:
+        """Build the same typed plan used by ``run`` for pre-execution review."""
+        return self._create_plan(question)
+
+    def run(
+        self,
+        issuer_id: str = "NRT",
+        *,
+        question: ResearchQuestion | None = None,
+        additional_evidence: tuple[EvidenceItem, ...] = (),
+        progress_callback: Callable[[str], None] | None = None,
+    ) -> ResearchRun:
         issuer = self.universe.issuer(issuer_id)
-        state = ResearchState(question=default_question(issuer_id))
+        selected_question = question or default_question(issuer_id)
+        if selected_question.issuer_id != issuer_id:
+            raise ValueError("research question issuer must match the selected issuer")
+        state = ResearchState(question=selected_question)
         manager = StateManager(state)
         manager.event(
             "research_started",
@@ -86,9 +102,11 @@ class ResearchWorkbench:
             seed=self.config.seed,
             architecture=self.config.architecture,
         )
+        _progress(progress_callback, "Planning")
         plan = self._create_plan(state.question)
         manager.set_plan(plan)
 
+        _progress(progress_callback, "Evidence retrieval")
         if self.config.retrieval_enabled:
             retrieved = self.retriever.search(
                 f"{issuer.name} fundamentals market spread refinancing macro risk",
@@ -100,14 +118,21 @@ class ResearchWorkbench:
             )
             for evidence in retrieved:
                 manager.add_evidence(evidence, AgentRole.EVIDENCE)
+        for evidence in additional_evidence:
+            manager.add_evidence(evidence, AgentRole.EVIDENCE)
 
+        _progress(progress_callback, "Financial calculations")
         if self.config.tool_access:
             self._run_tools(manager, issuer)
 
+        _progress(progress_callback, "Specialist analysis")
         self._run_research(manager, issuer)
+        _progress(progress_callback, "Thesis synthesis")
         thesis = self._synthesize(manager, issuer)
         if self.config.critic_enabled:
+            _progress(progress_callback, "Adversarial challenge")
             thesis = self._challenge(manager, thesis, issuer)
+        _progress(progress_callback, "Evidence verification")
         verification = verify_state(state)
         if self.config.verification_enabled:
             manager.event(
@@ -117,7 +142,9 @@ class ResearchWorkbench:
                 valid=verification.valid,
                 unsupported=len(verification.unsupported_claim_ids),
             )
+        _progress(progress_callback, "Approval gate")
         approval = self._approval(manager, verification)
+        _progress(progress_callback, "Memo generation")
         memo = self._memo(manager, thesis, approval, verification)
         manager.event("memo_generated", AgentRole.SYNTHESIZER, issuer_id)
         manager.event("research_completed", AgentRole.PLANNER, issuer_id)
@@ -531,3 +558,8 @@ class ResearchWorkbench:
             "steps": float(len(state.audit)),
             "research_quality_score": round(quality, 2),
         }
+
+
+def _progress(callback: Callable[[str], None] | None, stage: str) -> None:
+    if callback is not None:
+        callback(stage)

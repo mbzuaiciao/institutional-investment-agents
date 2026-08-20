@@ -8,6 +8,17 @@ The concrete laboratory is synthetic five-year corporate credit research. The sy
 
 The repository has three cumulative research phases. **Phase 1** isolates harness architecture with a deterministic model. **Phase 2** crosses seeded stochastic model profiles with minimal, structured, and strong harnesses. **Phase 3** provides a frozen, budget-guarded protocol for validating those conclusions with configured real models; no real-model findings are claimed yet.
 
+## Try the Research Workbench
+
+Launch the analyst-facing local application without API credentials:
+
+```bash
+uv sync --all-groups
+uv run streamlit run workbench/app.py
+```
+
+Choose a bundled synthetic issuer, edit the research question, approve the proposed plan, run the structured workflow, inspect evidence and deterministic calculations, review the thesis and critic, record a human decision, and download an auditable memo/session bundle. Local `.txt`, `.md`, and `.csv` research packages can be added as separately identified evidence. See the [product guide](docs/product_workbench.md).
+
 ## Why institutional credit research?
 
 Institutional research is not just question answering. A professional workflow must distinguish source facts from calculations, inferences, and judgments; compare issuer fundamentals with market pricing; expose uncertainty and downside; preserve provenance; and support accountable review. That makes credit research a useful test of whether an agent harness improves the epistemic process, rather than merely the prose.
@@ -61,6 +72,7 @@ The core uses no orchestration framework. State transitions, tool contracts, evi
 - [Future Work](docs/future_work.md)
 - [Phase 2: Model vs Harness](docs/phase2_model_vs_harness.md)
 - [Phase 3: Real-Model Validation](docs/phase3_real_model_validation.md)
+- [Product Workbench](docs/product_workbench.md)
 - [Failure Taxonomy](docs/failure_taxonomy.md)
 
 ## Curriculum
