@@ -39,6 +39,19 @@ Typed plan ──► deterministic router
 
 The core uses no orchestration framework. State transitions, tool contracts, evidence IDs, routing, challenges, verification, and audit events are ordinary typed Python code.
 
+## Documentation
+
+- [Project Overview](docs/project_overview.md)
+- [Architecture](docs/architecture.md)
+- [Research Question](docs/research_question.md)
+- [Experiment Design](docs/experiment_design.md)
+- [Results and Findings](docs/results_and_findings.md)
+- [Evaluation Framework](docs/evaluation_framework.md)
+- [Institutional Workflow](docs/institutional_workflow.md)
+- [Auditability and Controls](docs/auditability_and_controls.md)
+- [Limitations](docs/limitations.md)
+- [Future Work](docs/future_work.md)
+
 ## Curriculum
 
 | Tutorial | Concept | Implementation | Research lesson |
@@ -65,7 +78,7 @@ Run any lesson with, for example, `uv run python tutorials/04_financial_tools.py
 ## Experiments
 
 - `run_single_vs_multi.py` holds cases and tools constant while changing task ownership.
-- `run_workflow_ablation.py` compares a context-only/free-form baseline with explicit tasks.
+- `run_workflow_ablation.py` compares free-form specialist research with an explicit institutional workflow while holding retrieval and tools constant.
 - `run_critic_ablation.py` measures marginal risk recall and added steps.
 - `run_evidence_ablation.py` compares otherwise identical workflows with and without an explicit verifier.
 - `run_capstone.py` compares six variants across multiple seeds and issuers, then writes JSON, Markdown, and four plots.
@@ -112,4 +125,3 @@ Source-controlled capstone outputs live in `results/`. Runs record the seed, con
 ## Limitations
 
 The data and ground truth are synthetic and simplified. Spread-to-benchmark is not a full option-adjusted-spread calculation; scenario P&L is a transparent duration approximation; default and recovery assumptions are pedagogical. The deterministic model policy does not reproduce the linguistic variability or failure modes of a production LLM. Lexical support checks are not semantic entailment, and the benchmark partially reflects choices made by its authors. Persistent state is intra-run in this prototype, not a production cross-case memory service. There is no licensed data, live pricing, order execution, portfolio optimization, or claim of investment advice. Human approval is represented structurally but simulated by policy for reproducible runs.
-
